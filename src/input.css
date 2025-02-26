@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-custom-gray: #1f1f1f;
+    --color-custom-hoverblue: #9e3aed;
+    --color-custom-blue: #2d2930;
+    --color-custom-header: #424242;
+    --color-custom-headertext: #b5b5b5;
+  }
+}
+
+@layer utilities {
+  .bg-custom-gray {
+    background-color: var(--color-custom-gray);
+  }
+  .bg-custom-hoverblue {
+    background-color: var(--color-custom-hoverblue);
+  }
+  .bg-custom-blue {
+    background-color: var(--color-custom-blue);
+  }
+  .bg-custom-header {
+    background-color: var(--color-custom-header);
+  }
+  .text-custom-headertext {
+    color: var(--color-custom-headertext);
+  }
+
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+  .fixed-content-container {
+    position: relative;
+    width: 100%;
+    min-height: 200px; /* Ajuste conforme necessário */
+    overflow-x: hidden;
+  }
+
+  /* Nova abordagem para contentWrapper */
+  .contentWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+  .contentWrapper.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  .buttonwrapper button.active {
+    background-color: var(--color-custom-hoverblue);
+}
