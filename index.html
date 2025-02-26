@@ -19,29 +19,29 @@
 
     <title></title>
   </head>
-  <body
-    class="min-h-dvh font-inter w-full overflow-x-hidden bg-custom-gray"
-    style="font-optical-sizing: auto"
-  >
-    <div class="app font w-screen antialiased">
+  <body class="min-h-dvh font-inter w-full overflow-x-hidden bg-custom-gray">
+    <div class="app w-screen antialiased">
       <header
-        class="p-4 text-custom-headertext font-semibold flex items-center justify-between border-b border-b-(--color-custom-header)"
+        class="p-4 text-custom-headertext font-semibold flex items-center justify-between md:max-w-[1440px] md:mx-auto md:px-20"
       >
         <p class="">Rafael Santos</p>
-        <section class="flex items-center">
+        <span class="flex items-center">
           <a class="" href="#">Contato</a>
           <img
-            class="w-8 h-8 justify-end rounded-full ml-4"
+            class="w-8 h-8 justify-end rounded-full md:invisible ml-4 md:ml-0"
             src="./assets/Picsart_24-08-06_16-22-59-768-transformed-mtCmb5y66-transformed copy 1.png"
             alt="Profile Picture"
           />
-        </section>
+        </span>
       </header>
+      <div class="border-t border-t-(--color-custom-header)"></div>
 
-      <div class="">
+      <div class="md:mx-auto md:max-w-[1440px] md:px-20">
         <main class="flex flex-col justify-center">
-          <div class="sideA mx-4 font-semibold gap-2 mt-11">
-            <li class="w-max-[298px] text-white gap-2 text-xs list-none flex">
+          <div class="sideA mx-4 font-semibold gap-2 mt-11 md:mx-0">
+            <li
+              class="max-w-[298px] md:w-[322px] text-white gap-2 text-xs list-none flex"
+            >
               <ul class="font-inter">
                 DEVELOPER
               </ul>
@@ -53,11 +53,15 @@
               </ul>
             </li>
 
-            <h1 class="text-4xl w-[343px] h-[215px] mt-4 mb-4 text-white">
-              Rafael Santos, profissional de Tecnologia da Informação de 27 anos
+            <h1
+              class="text-4xl w-[343px] h-[215px] md:w-[848px] md:text-[64px] md:leading-[77px] mt-4 mb-4 md:mb-6 md:font-semibold text-white"
+            >
+              Rafael Santos, profissional de Tecnologia da <br />
+              Informação de 27 anos
             </h1>
+
             <p
-              class="max-w-[343px] font-normal leading-5 text-white text-sm w-max-[343px]"
+              class="max-w-[343px] font-normal leading-5 text-white text-sm w-max-[343px] md:max-w-[793px] md:text-base md:leading-[22px]"
             >
               Possuo uma visão clara para fluxos e sistemas, que acredito serem
               essenciais para promover a integração e trazer praticidade às
@@ -69,39 +73,41 @@
             </p>
           </div>
         </main>
-        <div class="botoes pl-4">
+        <div class="botoes pl-4 md:pl-0">
           <div
-            class="flex items-center gap-2 no-scrollbar overflow-visible mt-12 overflow-x-auto w-full max-w-full buttonwrapper"
+            class="flex items-center gap-2 no-scrollbar overflow-visible mt-12 mt- overflow-x-auto w-full max-w-full buttonwrapper md:mt-20"
           >
             <button
-              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg"
+              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg md:w-[143px] md:h-[48px]"
             >
               Certificados
             </button>
 
             <button
-              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg"
+              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg md:w-[143px] md:h-[48px]"
             >
               SoftSkills
             </button>
             <button
-              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg"
+              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg md:w-[143px] md:h-[48px]"
             >
               Teste
             </button>
             <button
-              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg"
+              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg md:w-[143px] md:h-[48px]"
             >
               Teste
             </button>
             <button
-              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg"
+              class="font-inter hover:bg-custom-hoverblue px-6 py-2.5 w-[131px] h-[38px] flex-none font-medium text-sm bg-custom-blue hover:bg-custom-hoverblue text-white rounded-lg md:w-[143px] md:h-[48px]"
             >
               Teste
             </button>
           </div>
         </div>
-        <div class="max-w-[375px] h-[360px] overflow-y-visible px-4">
+        <div
+          class="max-w-[375px] h-[360px] overflow-y-visible px-4 md:max-w-[779px]"
+        >
           <div class="fixed-content-container mt-6 font-inter no-scrollbar">
             <div
               class="contentWrapper font-normal text-sm leading-[20px] text-white"
@@ -142,6 +148,11 @@
             </div>
           </div>
         </div>
+        <img
+          src="./assets/Group 1.png"
+          alt="profile"
+          class="invisible md:visible w-[131px] h-[131px] md:translate-x-[890%] md:translate-y-[-670%]"
+        />
       </div>
     </div>
     <script src="main.js"></script>

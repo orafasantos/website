@@ -54,9 +54,9 @@
   }
 
   .no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
   .contentWrapper.show {
     opacity: 1;
@@ -67,4 +67,5 @@
 
   .buttonwrapper button.active {
     background-color: var(--color-custom-hoverblue);
+  }
 }
