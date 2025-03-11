@@ -35,7 +35,7 @@
   .fixed-content-container {
     position: relative;
     width: 100%;
-    min-height: 200px; /* Ajuste conforme necessário */
+    height: auto;
     overflow-x: hidden;
   }
 
@@ -68,5 +68,4 @@
   .buttonwrapper button.active {
     background-color: var(--color-custom-hoverblue);
   }
-
 }
